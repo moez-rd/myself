@@ -1,6 +1,6 @@
 import { NextPage } from 'next'
 import Image from 'next/image'
-import { Fragment, useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import Typed from 'typed.js'
 import {
   faGithub,
@@ -9,6 +9,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import SocialLink from '@/components/SocialLink'
 import PageLink from '@/components/PageLink'
+import HomeLayout from '@/components/HomeLayout'
 
 const Home: NextPage = () => {
   const typedEl = useRef(null)
@@ -33,68 +34,69 @@ const Home: NextPage = () => {
   })
 
   return (
-    <Fragment>
-      <div className="h-screen flex flex-col justify-center pl-80">
-        {/* HEADER */}
-        <header>
-          <Image
-            src="/profile-90x90.png"
-            width={90}
-            height={90}
-            alt="My profile photo"
-            className="rounded-full"
-          />
-          <h1 className="text-2xl mt-6 text-primary-600">
-            Hi, my name is Rahmat
-          </h1>
-          <div className="text-5xl text-secondary-500 font-medium">
-            <span
-              ref={typedEl}
-              id="typed"
-              className="typed-text text-primary-700 font-black"
-            ></span>
-          </div>
-        </header>
-        {/* MAIN */}
-        <main className="mt-8">
-          <p className="text-lg">
-            - <span className="font-bold text-secondary-500">A Student</span> at
-            Sriwijaya University in Indonesia
-          </p>
-          <ul className="flex space-x-4 mt-0.5">
-            <li>
-              <SocialLink icon={faGithub} href="#">
-                GitHub
-              </SocialLink>
-            </li>
-            <li>
-              <SocialLink icon={faLinkedin} href="#">
-                LinkedIn
-              </SocialLink>
-            </li>
-            <li>
-              <SocialLink icon={faInstagram} href="#">
-                Instagram
-              </SocialLink>
-            </li>
-          </ul>
-        </main>
-        {/* NAV */}
-        <nav className="mt-8">
-          <ul className="flex space-x-1">
-            <li>
-              <PageLink href="/projects">Projects</PageLink>
-            </li>
-            <li>
-              <PageLink href="/contact">Contact</PageLink>
-            </li>
-            <li>
-              <PageLink href="/about">About</PageLink>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </Fragment>
+    <HomeLayout>
+      {/* HEADER */}
+      <header>
+        <Image
+          src="/profile-90x90.png"
+          width={90}
+          height={90}
+          alt="My profile photo"
+          className="rounded-full"
+        />
+        <h1 className="text-2xl mt-6 text-primary-600">
+          Hi, my name is Rahmat
+        </h1>
+        <div className="text-5xl text-secondary-500 font-medium">
+          <span
+            ref={typedEl}
+            id="typed"
+            className="typed-text text-primary-700 font-black"
+          ></span>
+        </div>
+      </header>
+      {/* MAIN */}
+      <main className="mt-8">
+        <p className="text-lg">
+          <span className="font-bold text-secondary-500">- A Student</span> at
+          Sriwijaya University in Indonesia
+        </p>
+        <ul className="flex space-x-4 mt-0.5">
+          <li>
+            <SocialLink icon={faGithub} href="#">
+              GitHub
+            </SocialLink>
+          </li>
+          <li>
+            <SocialLink icon={faLinkedin} href="#">
+              LinkedIn
+            </SocialLink>
+          </li>
+          <li>
+            <SocialLink icon={faInstagram} href="#">
+              Instagram
+            </SocialLink>
+          </li>
+        </ul>
+      </main>
+      {/* NAV */}
+      <nav className="mt-8">
+        <ul className="flex space-x-1">
+          <li>
+            <PageLink href="/projects">Projects</PageLink>
+          </li>
+          <li>
+            <PageLink href="/blogs">Blogs</PageLink>
+          </li>
+          <li>
+            <PageLink href="/contact">Contact</PageLink>
+          </li>
+          <li>
+            <PageLink href="/about">About</PageLink>
+          </li>
+        </ul>
+      </nav>
+    </HomeLayout>
   )
 }
 

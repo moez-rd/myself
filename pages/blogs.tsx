@@ -2,11 +2,11 @@ import ContentLayout from '@/components/ContentLayout'
 import NavLink from '@/components/NavLink'
 import { NextPage } from 'next'
 
-const Projects: NextPage = () => {
+const Blogs: NextPage = () => {
   return (
     <ContentLayout>
       <header>
-        <h1 className="font-black text-4xl">Projects</h1>
+        <h1 className="font-black text-4xl">Blogs</h1>
       </header>
       {/* NAV */}
       <nav className="mt-6">
@@ -31,11 +31,11 @@ const Projects: NextPage = () => {
       <main className="mt-12 max-w-xl">
         <p className="text-lg mt-3">
           <span className="font-bold text-secondary-500">- I currently </span>
-          don&apos;t have projects
+          don&apos;t have blog
         </p>
       </main>
     </ContentLayout>
   )
 }
 
-export default Projects
+export default Blogs
