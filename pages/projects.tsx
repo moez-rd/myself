@@ -2,10 +2,14 @@ import ContentLayout from '@/components/ContentLayout'
 import NavLink from '@/components/NavLink'
 import PageTitle from '@/components/PageTitle'
 import { NextPage } from 'next'
+import Head from 'next/head'
 
 const Projects: NextPage = () => {
   return (
     <ContentLayout>
+      <Head>
+        <title>Rahmat - Projects</title>
+      </Head>
       <header>
         <PageTitle>Projects</PageTitle>
       </header>
