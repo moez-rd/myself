@@ -7,6 +7,7 @@ import PageTitle from '@/components/PageTitle'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { NextPage } from 'next'
+import Head from 'next/head'
 import { FormEvent, useState } from 'react'
 
 const Contact: NextPage = () => {
@@ -54,6 +55,9 @@ const Contact: NextPage = () => {
 
   return (
     <ContentLayout>
+      <Head>
+        <title>Rahmat - Contact</title>
+      </Head>
       <header>
         <PageTitle>Contact Me</PageTitle>
       </header>

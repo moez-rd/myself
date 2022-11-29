@@ -4,14 +4,14 @@ import PageTitle from '@/components/PageTitle'
 import { NextPage } from 'next'
 import Head from 'next/head'
 
-const Home: NextPage = () => {
+const Page500: NextPage = () => {
   return (
     <ContentLayout>
       <Head>
-        <title>Rahmat - About</title>
+        <title>500: Server Error</title>
       </Head>
       <header>
-        <PageTitle>About Me</PageTitle>
+        <PageTitle>500</PageTitle>
       </header>
       {/* NAV */}
       <nav className="mt-3 sm:mt-6">
@@ -34,28 +34,14 @@ const Home: NextPage = () => {
         </ul>
       </nav>
       <main className="mt-8 sm:mt-12 max-w-xl">
-        <p className="text-lg mt-3">
-          <span className="font-bold text-secondary-500">- I live&nbsp;</span>in
-          South Sumatra, in a peaceful village. I am 18 years old, enthusiastic
-          about computer and programming since high school.
-        </p>
-        <p className="text-lg mt-3">
+        <p className="text-2xl mt-3">
           <span className="font-bold text-secondary-500">
-            - Currently studying&nbsp;
+            500: Server Error
           </span>
-          data science and machine learning at university. The language skills
-          that I have are HTML, CSS, JavaScript, PHP, and Python. However, I
-          have not fully mastered all of that.
-        </p>
-        <p className="text-lg mt-3">
-          <span className="font-bold text-secondary-500">
-            - I&apos;m interested&nbsp;
-          </span>
-          in listening to music, watching YouTube, and editing photo.
         </p>
       </main>
     </ContentLayout>
   )
 }
 
-export default Home
+export default Page500

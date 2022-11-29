@@ -10,6 +10,7 @@ import {
 import SocialLink from '@/components/SocialLink'
 import PageLink from '@/components/PageLink'
 import HomeLayout from '@/components/HomeLayout'
+import Head from 'next/head'
 
 const Home: NextPage = () => {
   const typedEl = useRef(null)
@@ -35,6 +36,9 @@ const Home: NextPage = () => {
 
   return (
     <HomeLayout>
+      <Head>
+        <title>Rahmat</title>
+      </Head>
       {/* HEADER */}
       <header>
         <Image
