@@ -3,6 +3,7 @@ import FormAlert from '@/components/FormAlert'
 import FormInput from '@/components/FormInput'
 import FormTextarea from '@/components/FormTextarea'
 import NavLink from '@/components/NavLink'
+import PageTitle from '@/components/PageTitle'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { NextPage } from 'next'
@@ -54,9 +55,9 @@ const Contact: NextPage = () => {
   return (
     <ContentLayout>
       <header>
-        <h1 className="font-black text-4xl">Contact Me</h1>
+        <PageTitle>Contact Me</PageTitle>
       </header>
-      <nav className="mt-6">
+      <nav className="mt-3 sm:mt-6">
         <ul className="flex space-x-4">
           <li>
             <NavLink href="/">Home</NavLink>
@@ -75,7 +76,7 @@ const Contact: NextPage = () => {
           </li>
         </ul>
       </nav>
-      <main className="mt-12 max-w-md">
+      <main className="mt-8 sm:mt-12 max-w-md">
         <p className="text-primary-500">
           Want to send me a message? fill the form below.
         </p>

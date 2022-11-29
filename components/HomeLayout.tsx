@@ -6,7 +6,7 @@ interface Props {
 
 const HomeLayout: FC<Props> = ({ children }) => {
   return (
-    <div className="h-screen flex flex-col justify-center pl-80">
+    <div className="h-screen flex flex-col justify-center px-4 sm:pl-80">
       {children}
     </div>
   )

@@ -44,10 +44,10 @@ const Home: NextPage = () => {
           alt="My profile photo"
           className="rounded-full"
         />
-        <h1 className="text-2xl mt-6 text-primary-600">
+        <h1 className="text-lg sm:text-2xl mt-6 text-primary-600">
           Hi, my name is Rahmat
         </h1>
-        <div className="text-5xl text-secondary-500 font-medium">
+        <div className="text-3xl sm:text-5xl text-secondary-500 font-medium">
           <span
             ref={typedEl}
             id="typed"
@@ -56,31 +56,37 @@ const Home: NextPage = () => {
         </div>
       </header>
       {/* MAIN */}
-      <main className="mt-8">
-        <p className="text-lg">
+      <main className="mt-4 sm:mt-8">
+        <p className="sm:text-lg">
           <span className="font-bold text-secondary-500">- A Student</span> at
           Sriwijaya University in Indonesia
         </p>
-        <ul className="flex space-x-4 mt-0.5">
+        <ul className="flex space-x-2 sm:space-x-4 mt-0.5">
           <li>
-            <SocialLink icon={faGithub} href="#">
+            <SocialLink icon={faGithub} href="https://github.com/moez-rd">
               GitHub
             </SocialLink>
           </li>
           <li>
-            <SocialLink icon={faLinkedin} href="#">
+            <SocialLink
+              icon={faLinkedin}
+              href="https://www.instagram.com/moez.muhardin"
+            >
               LinkedIn
             </SocialLink>
           </li>
           <li>
-            <SocialLink icon={faInstagram} href="#">
+            <SocialLink
+              icon={faInstagram}
+              href="https://www.linkedin.com/in/rahmat-tullah-085b89221"
+            >
               Instagram
             </SocialLink>
           </li>
         </ul>
       </main>
       {/* NAV */}
-      <nav className="mt-8">
+      <nav className="mt-10 sm:mt-8">
         <ul className="flex space-x-1">
           <li>
             <PageLink href="/projects">Projects</PageLink>

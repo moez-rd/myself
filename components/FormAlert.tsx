@@ -11,7 +11,7 @@ interface Props {
 const FormAlert: FC<Props> = ({ message, type, onClose }) => {
   return (
     <div
-      className={`border  w-60 rounded-lg text-sm  px-2 py-1.5 relative ${
+      className={`border w-48 sm:w-60 rounded-lg text-sm  px-2 py-1.5 relative ${
         type == 'success'
           ? 'bg-success-100 border-success-400 text-success-700'
           : 'bg-danger-100 border-danger-400 text-danger-700'
