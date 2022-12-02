@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        <link rel="shortcut icon" type="image/jpg" href="favicon.ico" />
         <meta
           name="description"
           content="This is about myself, a Student at Sriwijaya University in Indonesia"
