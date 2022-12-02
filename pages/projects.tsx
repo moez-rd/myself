@@ -49,7 +49,7 @@ const Projects: NextPage = () => {
         </div>
         <div>
           <h2 className="text-2xl font-bold">Soekarno Tribute</h2>
-          <p className="text-lg mt-3">
+          <p className="text-lg mt-1">
             <span className="font-bold text-secondary-500">
               - My assignment&nbsp;
             </span>

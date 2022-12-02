@@ -7,7 +7,7 @@ export default function Document() {
         <link rel="shortcut icon" type="image/jpg" href="favicon.ico" />
         <meta
           name="description"
-          content="This is about myself, a Student at Sriwijaya University in Indonesia"
+          content="This is about myself, a student at Sriwijaya University in Indonesia"
         />
       </Head>
       <body>
