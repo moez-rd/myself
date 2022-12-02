@@ -2,8 +2,6 @@ import ContentLayout from '@/components/ContentLayout'
 import NavLink from '@/components/NavLink'
 import PageTitle from '@/components/PageTitle'
 import ProjectLink from '@/components/ProjectLink'
-import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { NextPage } from 'next'
 import Head from 'next/head'
 
