@@ -1,6 +1,5 @@
-import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { FC } from 'react'
+import { RiArrowRightLine } from 'react-icons/ri'
 
 interface Props {
   href: string
@@ -14,8 +13,7 @@ const ProjectLink: FC<Props> = ({ href, children }) => {
       target="blank_"
       className="font-bold underline hover:underline-offset-2"
     >
-      {children}&nbsp;
-      <FontAwesomeIcon icon={faArrowRightLong} />
+      {children}<RiArrowRightLine className="inline" />
     </a>
   )
 }
