@@ -4,11 +4,10 @@ import FormInput from '@/components/FormInput'
 import FormTextarea from '@/components/FormTextarea'
 import NavLink from '@/components/NavLink'
 import PageTitle from '@/components/PageTitle'
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { NextPage } from 'next'
 import Head from 'next/head'
 import { FormEvent, useState } from 'react'
+import { RiSendPlaneFill } from 'react-icons/ri'
 
 const Contact: NextPage = () => {
   const [isSending, setIsSending] = useState(false)
@@ -139,7 +138,7 @@ const Contact: NextPage = () => {
               {!isSending ? (
                 <span>
                   Send&nbsp;
-                  <FontAwesomeIcon icon={faPaperPlane} />
+                  <RiSendPlaneFill className="inline text" />
                 </span>
               ) : (
                 'Sending...'

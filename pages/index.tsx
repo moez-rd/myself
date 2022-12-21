@@ -2,15 +2,15 @@ import { NextPage } from 'next'
 import Image from 'next/image'
 import { useEffect, useRef } from 'react'
 import Typed from 'typed.js'
-import {
-  faGithub,
-  faLinkedin,
-  faInstagram,
-} from '@fortawesome/free-brands-svg-icons'
 import SocialLink from '@/components/SocialLink'
 import PageLink from '@/components/PageLink'
 import HomeLayout from '@/components/HomeLayout'
 import Head from 'next/head'
+import {
+  RiGithubFill,
+  RiLinkedinBoxFill,
+  RiInstagramFill,
+} from 'react-icons/ri'
 
 const Home: NextPage = () => {
   const typedEl = useRef(null)
@@ -67,23 +67,20 @@ const Home: NextPage = () => {
         </p>
         <ul className="flex space-x-2 sm:space-x-4 mt-0.5">
           <li>
-            <SocialLink icon={faGithub} href="https://github.com/moez-rd">
+            <SocialLink href="https://github.com/moez-rd">
+              <RiGithubFill className="inline" />
               GitHub
             </SocialLink>
           </li>
           <li>
-            <SocialLink
-              icon={faLinkedin}
-              href="https://www.instagram.com/moez.muhardin"
-            >
+            <SocialLink href="https://www.instagram.com/moez.muhardin">
+              <RiLinkedinBoxFill className="inline" />
               LinkedIn
             </SocialLink>
           </li>
           <li>
-            <SocialLink
-              icon={faInstagram}
-              href="https://www.linkedin.com/in/rahmat-tullah-085b89221"
-            >
+            <SocialLink href="https://www.linkedin.com/in/rahmat-tullah-085b89221">
+              <RiInstagramFill className="inline" />
               Instagram
             </SocialLink>
           </li>
