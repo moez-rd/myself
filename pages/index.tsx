@@ -6,7 +6,6 @@ import SocialLink from '@/components/SocialLink'
 import PageLink from '@/components/PageLink'
 import HomeLayout from '@/components/HomeLayout'
 import Head from 'next/head'
-
 import {
   RiGithubFill,
   RiLinkedinBoxFill,
@@ -69,17 +68,20 @@ const Home: NextPage = () => {
         <ul className="flex space-x-2 sm:space-x-4 mt-0.5">
           <li>
             <SocialLink href="https://github.com/moez-rd">
-              <RiGithubFill /> GitHub
+              <RiGithubFill className="inline" />
+              GitHub
             </SocialLink>
           </li>
           <li>
             <SocialLink href="https://www.instagram.com/moez.muhardin">
-              <RiLinkedinBoxFill /> LinkedIn
+              <RiLinkedinBoxFill className="inline" />
+              LinkedIn
             </SocialLink>
           </li>
           <li>
             <SocialLink href="https://www.linkedin.com/in/rahmat-tullah-085b89221">
-              <RiInstagramFill /> Instagram
+              <RiInstagramFill className="inline" />
+              Instagram
             </SocialLink>
           </li>
         </ul>

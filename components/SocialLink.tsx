@@ -10,7 +10,7 @@ const SocialLink: FC<Props> = ({ href, children }) => {
     <a
       href={href}
       target="blank_"
-      className="font-bold flex items-center underline hover:underline-offset-2"
+      className="font-bold underline hover:underline-offset-2"
     >
       {children}
     </a>
