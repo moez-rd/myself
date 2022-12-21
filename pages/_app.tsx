@@ -6,19 +6,15 @@ const firaSans = Fira_Sans({
   subsets: ['latin'],
   style: ['normal', 'italic'],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-fira-sans',
 })
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <style jsx global>
-        {`
-          :root {
-            --fira-sans-font: ${firaSans.style.fontFamily};
-          }
-        `}
-      </style>
-      <Component {...pageProps} />
+      <div className={`${firaSans.variable} font-primary`}>
+        <Component {...pageProps} />
+      </div>
     </>
   )
 }

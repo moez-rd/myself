@@ -6,8 +6,8 @@ const colors = require('tailwindcss/colors')
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     colors: {
@@ -18,11 +18,11 @@ module.exports = {
       primary: colors.zinc,
       secondary: colors.sky,
       danger: colors.red,
-      success: colors.emerald
+      success: colors.emerald,
     },
     extend: {
       fontFamily: {
-        primary: ['var(--fira-sans-font)', ...fontFamily.sans],
+        primary: ['var(--font-fira-sans)', ...fontFamily.sans],
       },
     },
   },
