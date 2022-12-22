@@ -1,13 +1,15 @@
-import ContentLayout from '@/components/ContentLayout'
-import FormAlert from '@/components/FormAlert'
-import FormInput from '@/components/FormInput'
-import FormTextarea from '@/components/FormTextarea'
-import NavLink from '@/components/NavLink'
-import PageTitle from '@/components/PageTitle'
 import { NextPage } from 'next'
 import Head from 'next/head'
 import { FormEvent, useState } from 'react'
 import { RiSendPlaneFill } from 'react-icons/ri'
+import {
+  ContentLayout,
+  FormAlert,
+  FormInput,
+  FormTextarea,
+  NavLink,
+  PageTitle,
+} from '@/components/index'
 
 const Contact: NextPage = () => {
   const [isSending, setIsSending] = useState(false)

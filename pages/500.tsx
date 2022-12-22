@@ -1,8 +1,6 @@
-import ContentLayout from '@/components/ContentLayout'
-import NavLink from '@/components/NavLink'
-import PageTitle from '@/components/PageTitle'
 import { NextPage } from 'next'
 import Head from 'next/head'
+import { ContentLayout, NavLink, PageTitle } from '@/components/index'
 
 const Page500: NextPage = () => {
   return (
