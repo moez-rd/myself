@@ -72,14 +72,14 @@ const Home: NextPage = () => {
           </li>
           <li>
             <SocialLink href="https://www.instagram.com/moez.muhardin">
-              <RiLinkedinBoxFill className="inline" />
-              LinkedIn
+              <RiInstagramFill className="inline" />
+              Instagram
             </SocialLink>
           </li>
           <li>
-            <SocialLink href="https://www.linkedin.com/in/rahmat-tullah-085b89221">
-              <RiInstagramFill className="inline" />
-              Instagram
+            <SocialLink href="https://www.linkedin.com/in/rmmz/">
+              <RiLinkedinBoxFill className="inline" />
+              LinkedIn
             </SocialLink>
           </li>
         </ul>
