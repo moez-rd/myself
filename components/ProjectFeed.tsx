@@ -22,7 +22,7 @@ const ProjectFeed: FC<Props> = ({ projects }) => {
           </div>
           <p className="text-lg mt-1">{project.description}</p>
           <div className="flex space-x-0.5 items-center">
-            <ExternalLink href={project.url}>Live Preview</ExternalLink>
+            <ExternalLink href={project.url}>Live preview</ExternalLink>
           </div>
         </div>
       ))}
