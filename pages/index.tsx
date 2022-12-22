@@ -1,16 +1,14 @@
 import { NextPage } from 'next'
+import Head from 'next/head'
 import Image from 'next/image'
 import { useEffect, useRef } from 'react'
 import Typed from 'typed.js'
-import SocialLink from '@/components/SocialLink'
-import PageLink from '@/components/PageLink'
-import HomeLayout from '@/components/HomeLayout'
-import Head from 'next/head'
 import {
   RiGithubFill,
   RiLinkedinBoxFill,
   RiInstagramFill,
 } from 'react-icons/ri'
+import { SocialLink, PageLink, HomeLayout } from '@/components/index'
 
 const Home: NextPage = () => {
   const typedEl = useRef(null)
@@ -65,7 +63,7 @@ const Home: NextPage = () => {
           <span className="font-bold text-secondary-500">- A Student</span> at
           Sriwijaya University in Indonesia
         </p>
-        <ul className="flex space-x-2 sm:space-x-4 mt-0.5">
+        <ul className="flex space-x-2 sm:space-x-2 mt-0.5">
           <li>
             <SocialLink href="https://github.com/moez-rd">
               <RiGithubFill className="inline" />

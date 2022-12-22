@@ -1,10 +1,19 @@
-import ContentLayout from '@/components/ContentLayout'
-import NavLink from '@/components/NavLink'
-import PageTitle from '@/components/PageTitle'
-import { NextPage } from 'next'
+import { NextPage, GetServerSideProps } from 'next'
 import Head from 'next/head'
+import type Post from '@/lib/types/Post'
+import { ContentLayout, NavLink, PageTitle, PostFeed } from '@/components/index'
 
-const Blogs: NextPage = () => {
+export const getServerSideProps: GetServerSideProps = async () => {
+  const res = await fetch(`https://dev.to/api/articles?username=bzz`)
+  const posts: Post[] = await res.json()
+  return { props: { posts } }
+}
+
+interface Props {
+  posts: Post[]
+}
+
+const Blogs: NextPage<Props> = (props: Props) => {
   return (
     <ContentLayout>
       <Head>
@@ -33,11 +42,8 @@ const Blogs: NextPage = () => {
           </li>
         </ul>
       </nav>
-      <main className="mt-8 sm:mt-12 max-w-xl">
-        <p className="text-lg mt-3">
-          <span className="font-bold text-secondary-500">- I currently </span>
-          don&apos;t have blog
-        </p>
+      <main className="mt-8 mb-12 space-y-8 sm:mt-12 max-w-xl">
+        <PostFeed posts={props.posts}></PostFeed>
       </main>
     </ContentLayout>
   )
