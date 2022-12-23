@@ -1,4 +1,5 @@
 export { default as ContentLayout } from './ContentLayout'
+export { default as ContentNav } from './ContentNav'
 export { default as ExternalLink } from './ExternalLink'
 export { default as FormAlert } from './FormAlert'
 export { default as FormInput } from './FormInput'

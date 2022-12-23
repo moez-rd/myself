@@ -1,11 +1,12 @@
 import { FC } from 'react'
+import s from './ContentLayout.module.css'
 
 interface Props {
   children: string | JSX.Element | JSX.Element[]
 }
 
 const ContentLayout: FC<Props> = ({ children }) => {
-  return <div className="mt-20 px-4 sm:pl-80">{children}</div>
+  return <div className={s.root}>{children}</div>
 }
 
 export default ContentLayout
