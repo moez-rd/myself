@@ -1,6 +1,7 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import { Fira_Sans } from '@next/font/google'
+import NextNProgress from 'nextjs-progressbar'
 
 const firaSans = Fira_Sans({
   subsets: ['latin'],
@@ -12,6 +13,7 @@ const firaSans = Fira_Sans({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
+      <NextNProgress color="#71717a" />
       <div className={`${firaSans.variable} font-primary`}>
         <Component {...pageProps} />
       </div>

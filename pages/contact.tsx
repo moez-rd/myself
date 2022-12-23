@@ -4,10 +4,10 @@ import { FormEvent, useState } from 'react'
 import { RiSendPlaneFill } from 'react-icons/ri'
 import {
   ContentLayout,
+  ContentNav,
   FormAlert,
   FormInput,
   FormTextarea,
-  NavLink,
   PageTitle,
 } from '@/components/index'
 
@@ -62,25 +62,7 @@ const Contact: NextPage = () => {
       <header>
         <PageTitle>Contact Me</PageTitle>
       </header>
-      <nav className="mt-3 sm:mt-6">
-        <ul className="flex space-x-4">
-          <li>
-            <NavLink href="/">Home</NavLink>
-          </li>
-          <li>
-            <NavLink href="/projects">Projects</NavLink>
-          </li>
-          <li>
-            <NavLink href="/blogs">Blogs</NavLink>
-          </li>
-          <li>
-            <NavLink href="/contact">Contact</NavLink>
-          </li>
-          <li>
-            <NavLink href="/about">About</NavLink>
-          </li>
-        </ul>
-      </nav>
+      <ContentNav />
       <main className="mt-8 sm:mt-12 max-w-md">
         <p className="text-primary-500">
           Want to send me a message? fill the form below.

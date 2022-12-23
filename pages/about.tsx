@@ -1,6 +1,6 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
-import { ContentLayout, NavLink, PageTitle } from '@/components/index'
+import { ContentLayout, ContentNav, PageTitle } from '@/components/index'
 
 const Home: NextPage = () => {
   return (
@@ -11,33 +11,14 @@ const Home: NextPage = () => {
       <header>
         <PageTitle>About Me</PageTitle>
       </header>
-      {/* NAV */}
-      <nav className="mt-3 sm:mt-6">
-        <ul className="flex space-x-4">
-          <li>
-            <NavLink href="/">Home</NavLink>
-          </li>
-          <li>
-            <NavLink href="/projects">Projects</NavLink>
-          </li>
-          <li>
-            <NavLink href="/blogs">Blogs</NavLink>
-          </li>
-          <li>
-            <NavLink href="/contact">Contact</NavLink>
-          </li>
-          <li>
-            <NavLink href="/about">About</NavLink>
-          </li>
-        </ul>
-      </nav>
+      <ContentNav />
       <main className="mt-8 sm:mt-12 max-w-xl">
-        <p className="text-lg mt-3">
+        <p className="md:text-lg mt-3">
           <span className="font-bold text-secondary-500">- I live&nbsp;</span>in
-          South Sumatra, in a peaceful village. I am 18 years old, enthusiastic
+          South Sumatra, in a peaceful village. I am 19 years old, enthusiastic
           about computer and programming since high school.
         </p>
-        <p className="text-lg mt-3">
+        <p className="md:text-lg mt-3">
           <span className="font-bold text-secondary-500">
             - Currently studying&nbsp;
           </span>
@@ -45,7 +26,7 @@ const Home: NextPage = () => {
           that I have are HTML, CSS, JavaScript, PHP, and Python. However, I
           have not fully mastered all of that.
         </p>
-        <p className="text-lg mt-3">
+        <p className="md:text-lg mt-3">
           <span className="font-bold text-secondary-500">
             - I&apos;m interested&nbsp;
           </span>
