@@ -10,7 +10,7 @@ export default function Document() {
           content="This is about me, a student at Sriwijaya University in Indonesia"
         />
       </Head>
-      <body>
+      <body className="font-primry">
         <Main />
         <NextScript />
       </body>
